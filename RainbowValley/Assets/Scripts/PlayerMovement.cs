@@ -4,61 +4,45 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float spd;
-    public GroundGenerator groundGenerator;
+    Vector3 targetPos;
+    float spd = 5f;
 
-    bool isMoving;
-    Vector3 finalPos;
-
-    void Move()
+    IEnumerator Movement() 
     {
-        int x = Mathf.RoundToInt(transform.position.x);
-        int y = Mathf.RoundToInt(transform.position.y);
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            isMoving = true;
-            if (PosIsWalkable(x, y + 1)) { transform.position += Vector3.forward; }
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            isMoving = true;
-            if (PosIsWalkable(x - 1, y)) { transform.position -= Vector3.right; }
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            isMoving = true;
-            if (PosIsWalkable(x, y - 1)) { transform.position -= Vector3.forward; }
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            isMoving = true;
-            if (PosIsWalkable(x + 1, y)) { transform.position += Vector3.right; }
+        while (Vector3.Distance(transform.position, targetPos) > 0.01f) {
+            transform.position = Vector3.MoveTowards(transform.position, targetPos, spd * Time.deltaTime);
+            yield return null;
         }
     }
 
-    bool PosIsWalkable(int newX, int newY)
+    void Move(Vector3 newPos) 
     {
-        if (newX == 5 || newX < 0) { return false; }
-        if (groundGenerator.grid[newX, newY] == 1) { return false; }
+        targetPos = newPos;
+        StartCoroutine(Movement());
+    }
 
-        return true;
+    void PressKeys() 
+    {
+        if (Input.GetKeyDown(KeyCode.D)) 
+        {
+            Move(new Vector3(transform.position.x, transform.position.y, transform.position.z + 1));
+        } 
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            Move(new Vector3(transform.position.x, transform.position.y, transform.position.z - 1));
+        } 
+        else if (Input.GetKeyDown(KeyCode.W)) 
+        {
+            Move(new Vector3(transform.position.x - 1, transform.position.y, transform.position.z));
+        } 
+        else if (Input.GetKeyDown(KeyCode.S)) 
+        {
+            Move(new Vector3(transform.position.x + 1, transform.position.y, transform.position.z));
+        }
     }
 
     void Update()
     {
-        Move();
-
-        if (isMoving)
-        {
-            if (transform.position != finalPos)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, finalPos, Time.deltaTime * spd);
-            }
-            else
-            {
-                isMoving = false;
-            }
-        }
+        PressKeys();
     }
 }
