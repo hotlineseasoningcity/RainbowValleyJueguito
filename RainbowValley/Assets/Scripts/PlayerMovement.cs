@@ -6,13 +6,23 @@ public class PlayerMovement : MonoBehaviour
 {
     Vector3 targetPos;
     float spd = 5f;
+    bool isMoving = false;
+
+    void Awake()
+    {
+        transform.position = new Vector3(77.5f, 0.6f, 2);
+        transform.rotation = Quaternion.Euler(0, 90, 0);
+    }
 
     IEnumerator Movement() 
     {
-        while (Vector3.Distance(transform.position, targetPos) > 0.01f) {
+        isMoving = true;
+        while (Vector3.Distance(transform.position, targetPos) > 0.01f) 
+        {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, spd * Time.deltaTime);
             yield return null;
         }
+        isMoving = false;
     }
 
     void Move(Vector3 newPos) 
@@ -43,6 +53,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        PressKeys();
+        if (!isMoving && Input.anyKeyDown)
+        {
+            PressKeys();
+        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundGenerator : MonoBehaviour
 {
     public int[,] grid;
-    public MeshRenderer groundPref;
+    public MeshRenderer groundPref, obstaclePref;
     public Color green, darkerGreen;
 
     private void Start()
@@ -33,6 +33,12 @@ public class GroundGenerator : MonoBehaviour
                 {
                     map.material.color = darkerGreen;
                     grid[i, j] = 0;
+                }
+
+                if (Random.Range(0, 100) < 6.5f)
+                {
+                    MeshRenderer obstacle = Instantiate(obstaclePref, pos + Vector3.up * Random.Range(0.5f, 0.7f), Quaternion.identity);
+                    obstacle.material.color = Random.ColorHSV(0, 1, 0.5f, 1, 0.5f, 1);
                 }
             }
         }

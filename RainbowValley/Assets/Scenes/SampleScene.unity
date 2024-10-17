@@ -122,23 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &107296100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8289581260519845887, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
-  m_PrefabInstance: {fileID: 8296199471677386118}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &107296102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107296100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2383b4b11f15dd54bb8e71505c4f4bfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,8 +246,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundPref: {fileID: 6380971985599022373, guid: e4b9de07eb1e54f46befc51ce11e058e, type: 3}
+  obstaclePref: {fileID: 4140796477233090639, guid: 6eec74395015e5829b6bbf4d958201d5, type: 3}
   green: {r: 0.7403979, g: 0.9245283, b: 0.72828406, a: 0}
-  darkerGreen: {r: 0.62767, g: 0.8584906, b: 0.63816184, a: 0}
+  darkerGreen: {r: 0.5503293, g: 0.7830189, b: 0.562161, a: 0}
 --- !u!4 &815092591
 Transform:
   m_ObjectHideFlags: 0
@@ -291,6 +275,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -372,7 +357,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &8296199471677386118
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ee4f195861574a08c33e9b32fca761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2016387684}
+--- !u!1001 &1261332428
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -382,19 +380,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 74.84
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.60691684
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.48
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalRotation.x
@@ -402,7 +400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalRotation.z
@@ -414,7 +412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -422,16 +420,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8289581260519845887, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
       propertyPath: m_Name
-      value: Autism Creature
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8289581260519845887, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 107296102}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
+--- !u!4 &2016387684 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7057003711182726106, guid: 9ff180fe104ac500683a1f1fd3e506db, type: 3}
+  m_PrefabInstance: {fileID: 1261332428}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -439,4 +439,4 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 815092591}
-  - {fileID: 8296199471677386118}
+  - {fileID: 1261332428}
