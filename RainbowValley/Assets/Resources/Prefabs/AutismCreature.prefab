@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1987238283538818420}
   - component: {fileID: 1897235015195792907}
   - component: {fileID: 8914656834690923503}
-  - component: {fileID: 9117400879924170718}
   m_Layer: 0
   m_Name: L Eye
   m_TagString: Untagged
@@ -85,27 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &9117400879924170718
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933968773327612803}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1090255035105129906
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +95,6 @@ GameObject:
   - component: {fileID: 2701682729011049442}
   - component: {fileID: 4273662239650120660}
   - component: {fileID: 6017022619926406720}
-  - component: {fileID: 4139342856042550460}
   m_Layer: 0
   m_Name: Front L Leg
   m_TagString: Untagged
@@ -190,27 +167,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &4139342856042550460
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090255035105129906}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1155950492766211828
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +388,6 @@ GameObject:
   - component: {fileID: 856522460705972877}
   - component: {fileID: 5188276571550942070}
   - component: {fileID: 535160140560031397}
-  - component: {fileID: 3998333586956486556}
   m_Layer: 0
   m_Name: Back R Leg
   m_TagString: Untagged
@@ -505,27 +460,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &3998333586956486556
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576593054769178882}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2369141358466472761
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +471,6 @@ GameObject:
   - component: {fileID: 3335054299501567704}
   - component: {fileID: 839092503984116017}
   - component: {fileID: 2665840663106073964}
-  - component: {fileID: 6614970034033994083}
   m_Layer: 0
   m_Name: Back L Leg
   m_TagString: Untagged
@@ -610,27 +543,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6614970034033994083
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2369141358466472761}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3220989598694798601
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +554,6 @@ GameObject:
   - component: {fileID: 4691333882758158756}
   - component: {fileID: 3607371502020532273}
   - component: {fileID: 2376529687444823146}
-  - component: {fileID: 520717376152103415}
   m_Layer: 0
   m_Name: Front R Leg
   m_TagString: Untagged
@@ -715,27 +626,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &520717376152103415
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3220989598694798601}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5077859404403113987
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,7 +637,6 @@ GameObject:
   - component: {fileID: 3927987263853412616}
   - component: {fileID: 8048833929458414909}
   - component: {fileID: 6614582630525962283}
-  - component: {fileID: 3108501852154644147}
   m_Layer: 0
   m_Name: Torso
   m_TagString: Untagged
@@ -824,29 +713,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3108501852154644147
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5077859404403113987}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8076238848327492443
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +724,6 @@ GameObject:
   - component: {fileID: 5056626747501064720}
   - component: {fileID: 164864795452150593}
   - component: {fileID: 5985872411194537470}
-  - component: {fileID: 1996427381792725644}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -934,27 +799,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1996427381792725644
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8076238848327492443}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8289581260519845887
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,6 +809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7057003711182726106}
   - component: {fileID: 888213334880156898}
+  - component: {fileID: 6964942241237115423}
   m_Layer: 0
   m_Name: AutismCreature
   m_TagString: Player
@@ -1001,7 +846,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2383b4b11f15dd54bb8e71505c4f4bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+--- !u!65 &6964942241237115423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8289581260519845887}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.67856425, y: 1.5653218, z: 1.2570518}
+  m_Center: {x: -0.009040996, y: 0.5270416, z: 0.2621243}
 --- !u!1 &8557982907964793431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +878,6 @@ GameObject:
   - component: {fileID: 5403094874551664231}
   - component: {fileID: 860188798090707860}
   - component: {fileID: 1345089668776174169}
-  - component: {fileID: 5873090878193773454}
   m_Layer: 0
   m_Name: R Eye
   m_TagString: Untagged
@@ -1087,27 +951,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5873090878193773454
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8557982907964793431}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9175289851788988437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +962,6 @@ GameObject:
   - component: {fileID: 8873492506698006646}
   - component: {fileID: 2070606381046714290}
   - component: {fileID: 3411780206562193768}
-  - component: {fileID: 87726866858376021}
   m_Layer: 0
   m_Name: Mouth
   m_TagString: Untagged
@@ -1192,24 +1034,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &87726866858376021
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9175289851788988437}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

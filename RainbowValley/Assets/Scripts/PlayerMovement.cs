@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float spd = 5f;
+
     Vector3 targetPos;
-    float spd = 5f;
     bool isMoving = false;
 
     void Awake()
